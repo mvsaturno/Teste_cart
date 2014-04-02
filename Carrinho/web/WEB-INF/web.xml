@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>b211</param-value>
+    </context-param>
+    <context-param>
+        <param-name>senha</param-name>
+        <param-value>b211</param-value>
+    </context-param>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>oracle.jdbc.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:oracle:thin:@oracle.inf.poa.ifrs.edu.br:1521:XE</param-value>
+    </context-param>
+   <!-- <servlet>
+        <servlet-name>cadastraUsuarioServlet</servlet-name>
+        <servlet-class>controle.TrataCadastoUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>trataListagemUsuarios</servlet-name>
+        <servlet-class>controle.TrataListagemUsuariosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>trataLoginServlet</servlet-name>
+        <servlet-class>controle.TrataLoginServlet</servlet-class>
+        <init-param>
+            <param-name>color</param-name>
+            <param-value>BLUE</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cadastraUsuarioServlet</servlet-name>
+        <url-pattern>/cadastraUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>trataListagemUsuarios</servlet-name>
+        <url-pattern>/trataListagemUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>trataLoginServlet</servlet-name>
+        <url-pattern>/trataLoginServlet</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/erro.html</location>
+    </error-page>-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/erro404.html</location>
+    </error-page>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>controle.FrontController</servlet-class>
+    </servlet> 
+    
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>/FrontController</url-pattern>
+    </servlet-mapping>
+</web-app>
