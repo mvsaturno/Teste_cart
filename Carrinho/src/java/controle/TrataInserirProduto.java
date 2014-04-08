@@ -36,7 +36,7 @@ public class TrataInserirProduto extends Comando{
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
-         response.sendRedirect("index.jsp"); ////////////testando -- excluir linha depois
+         //response.sendRedirect("index.jsp"); ////////////testando -- excluir linha depois
         
         int idproduto = Integer.parseInt(request.getParameter("idproduto"));
         int quantidade = Integer.parseInt(request.getParameter("quantidade"));
@@ -70,7 +70,7 @@ public class TrataInserirProduto extends Comando{
             
             
             
-            //falta criar produtocarrinhoDAO pra continuar
+            
             
             response.sendRedirect("index.jsp");
             
