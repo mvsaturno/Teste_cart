@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/04/2014, 17:30:02
+    Author     : Saturno
+*/
+
+/**{
+	border: 1px solid red;
+}*/
+
+/*Header*/
+
+#head{
+    border: 1px solid black;
+}
+
+#top_menu{
+    border: 1px solid black;
+}
+
+#logo img{
+	width: 100%;
+	height: 100%;
+}
+
+#srch img{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 15px 15px 0;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#srch input{
+    float: left;
+    height: 30px;
+    border-radius: 15px 0 0 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: none;
+    width: 75%;
+    padding-left: 5px;
+}
+
+#title h1{
+    font-size: 4em;
+    font-family: Tahoma, Arial, serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+#srch img:hover{
+	cursor: pointer;
+}
+
+#top_menu{
+    list-style-type: none;
+    height: 50px;
+}
+
+#lista{
+    width: 90%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+ul#lista li{
+    display: inline;
+    margin-right: 25px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+
+#lista>:first-child{
+    border-top: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    cursor: inherit;
+}
+
+#lista li.destaq{
+	background-color: #ccc;
+}
+
+#lista li.destaq a{
+    text-decoration: none;
+    color: #f00;
+}
+
+.produto{
+    width: 280px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.produto p{
+    text-align: center;
+}
+
+.produto img{
+    width: 100%;
+    height: 70%;
+}
+
+.compra{
+	position: relative;
+	margin-left: 35%;
+        border-radius: 15px;
+        padding: 5px;
+        margin-top: -30px;
+}
+
+.login{
+    margin: 0 auto;
+    width: 295px;
+}
+
+.tbl_price{
+    width: 400px;
+    margin: 20px auto;
+}
+
+.tbl_price table, .tbl_price th, .tbl_price td{
+border: 1px solid black;
+padding: 5px;
+}
+
+.tbl_price th{
+    font-weight: bold;
+    text-align: center;
+}
